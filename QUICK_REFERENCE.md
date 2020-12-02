@@ -46,6 +46,7 @@ d.xpath("立即开户").click() # 包含查找等待+点击操作，匹配text�
 d.xpath("//*[@text='私人FM']/../android.widget.ImageView").click()
 
 d.xpath('//*[@text="私人FM"]').get().info # 获取控件信息
+上边这个，应该换成：d.xpath('//*[@text="私人FM"]').info # 获取控件信息
 
 for el in d.xpath('//android.widget.EditText').all():
     print("rect:", el.rect) # output tuple: (left_x, top_y, width, height)
